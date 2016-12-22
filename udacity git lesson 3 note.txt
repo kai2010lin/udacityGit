@@ -1,0 +1,38 @@
+remote repository like github
+1 push //upload
+2 pull //download
+
+git remote // manage remotes
+
+git remote add (github) (https://github.com/kai2010lin/udacityGit.git)
+
+git push github(local remote name) master(local branch name)
+
+git pull github(remote remote name) master(remote branch name)
+
+fork is github does git clone for you on server side
+
+1. git fetch (remote)// fetch others from github, leaving your uncommitted untouched
+
+
+commits   < ------- your work (master(branch name))
+          |
+          |
+          |-----<-----others work using git fetch(origin(remote)/master(branch name))
+2. git merge
+3. resolve the conflit mannully
+4. git add changed files
+
+git pull  =  git fetch + git merge
+
+pull request to request others' opinion
+1 git new_branch 
+2 git checkout new_branch
+3 changes code
+4 git commit
+5 git push
+
+git init
+git commit -m "first commit"
+git remote add origin https://github.com/kai2010lin/udacityGit.git
+git push -u origin master
