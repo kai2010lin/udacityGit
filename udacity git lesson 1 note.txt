@@ -1,0 +1,20 @@
+windows: 	fc file1 file2
+linux:		diff -u file1 file2
+
+how to command line a app
+1. add path to system variable
+2. type the app name
+
+git log//-see history
+git log --stat //see add or remove on which file
+press q to quit
+
+git diff file_1_ID file_2_ID
+
+git --version
+
+git clone //download the entire repository
+
+git checkout// restore to previous version, some changes are forgotten
+
+git config

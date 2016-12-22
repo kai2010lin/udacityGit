@@ -1,0 +1,53 @@
+dir /a //show all files include hidden
+git init // to initiate a git repository
+git status//to see tracked and untracked files
+
+
+staging area is a middle stage
+
+git add files// add file to staging area
+git status // to see status
+git rm files // to remove things from staging area
+
+
+working directory   =====   staging area  =====   repository
+
+
+git diff // to see dif between staging and working directory
+
+git diff --staged // compare staging area with repository
+
+git reset --hard // IMPORTANT careful, lose entire changes that is not in the repository
+
+git branch// to see current branch
+
+git branch name// to see branches
+
+git checkout name // to switch branches
+
+git log --graph // see log in graph
+
+//git commit knows who is its father
+
+git checkout loses a few commit unless you have written down commit ID
+
+git checkout -b new_branch_name // create a branch and check out that branch
+
+
+
+how to merge changes of 2 different branches
+1 switch to master(git checkout master)
+2 git merge brach_name1 branch_name2
+
+git show commit ID //to see changes without knowing parent
+
+after mege, you can delete the branch, since it is reachable from master or ...
+
+git branch -d branch_name
+
+encounter merge conflict, solve the conflict, then move on
+
+usually we dont modify commit message for merge
+
+
+git log -n 1 //show only 1 message
