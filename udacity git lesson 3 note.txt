@@ -26,11 +26,34 @@ commits   < ------- your work (master(branch name))
 git pull  =  git fetch + git merge
 
 pull request to request others' opinion
-1 git new_branch 
-2 git checkout new_branch
-3 changes code
-4 git commit
-5 git push
+//1 git new_branch 
+//2 git checkout new_branch
+//3 changes code
+//4 git commit
+//5 git push
+
+Tims-MacBook-Pro:third_party TimPeterson$ git clone https://github.com/tim-peterson/dwolla-php.git
+Tims-MacBook-Pro:third_party TimPeterson$ cd dwolla-php
+Tims-MacBook-Pro:dwolla-php TimPeterson$ git remote add upstream https://github.com/Dwolla/dwolla-php.git
+Tims-MacBook-Pro:dwolla-php TimPeterson$ git fetch upstream
+// make your changes to this newly cloned, local repo 
+Tims-MacBook-Pro:dwolla-php TimPeterson$ git add .
+Tims-MacBook-Pro:dwolla-php TimPeterson$ git commit -m '1st commit to dwolla'
+Tims-MacBook-Pro:dwolla-php TimPeterson$ git push origin master
+
+Part 1: fork someone's repo: https://help.github.com/articles/fork-a-repo
+click the 'fork' button on the repo you want to contribute to, in this case: Dwolla's PHP repo (Dwolla/dwolla-php)
+get the URL for your newly created fork, in this case: https://github.com/tim-peterson/dwolla-php.git (tim-peterson/dwolla-php)
+type the git clone->cd dwolla-php->git remote->git fetch sequence above to clone your fork somewhere in your computer (i.e., "copy/paste" it to, in this case: third_party TimPeterson$) and sync it with the master repo (Dwolla/dwolla-php)
+make your changes to your local repo
+type the git add->git commit->git push sequence above to push your changes to the remote repo, i.e., your fork on Github (tim-peterson/dwolla-php)
+Part 2: make pull-request: https://help.github.com/articles/using-pull-requests
+go to your fork's webpage on Github (https://github.com/tim-peterson/dwolla-php)
+click 'pull-request' button
+give pull-request a name, fill in details of what changes you made, click submit button.
+you're done!!
+
+
 
 git init
 git commit -m "first commit"
